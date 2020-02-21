@@ -64,45 +64,12 @@ Run target `gradlew deploy`
 
 ### Schema :
 
-![schema](resources/schema.jpeg)
+![schema](Captureerd.PNG)
 
-### Play around
-- Go to http://localhost:8080/frontend for the main page. You will see 'Users' and 'Salesman' option. Click on Users if you want to place an order, Click on Salesman if you want to create beverages, create incentives, manage incentives.
-- Go to http://localhost:8080/frontend/neworder for sending new orders to the JMS queue and persisting them into the DB
-- Start the application client inside your Browser http://localhost:8080/frontend/beverages to create new beverages
-- Go to http://localhost:8080/frontend/beverages/add_beverage and from there you can create new incentives and manage incentives
 
 
 ## Description
-On the first screen of our application we can choose between user and salesman :
-![choice](resources/home.PNG)
-
-if we choose **user** , we go on the order page :
-![order](resources/add_order.PNG)
-and we can increment the number of each beverage that we want and then save the order:
-![order2](resources/add_order2.PNG)
-
-If we choose **salesman**, we go on the beverages management pages :
-We see the existing beverages.
-
-![beverages](resources/beverages.PNG)
-
-If we click on create new beverage:  
-We can create a new beverage and in incentive we can see the existing incentive that we can choose.
-![addbeverage](resources/add_beverage.png)
-We can create new incentive:
-![incentive](resources/add_incentive.PNG)
-On cancel, we go back to the **add beverage** page.
-
-We can manage the incentives :
-![manage](resources/manage_incentive.PNG)
-
-We can edit an incentive :
-![edit](resources/edit_incentive.PNG)
-
-Or delete one :
-![delete](resources/delete_incentive.PNG)
-
+Stateless EJBs for business logic and Servlets for request-response are used in this Project. JSP Pages are used to create GUI pages. JPA is used for PostGreSQL Database.
 
 Important Notes:
 1. It is required to build and deploy the project for it to work
@@ -120,38 +87,3 @@ client side. We don't have any specific client so we don't have instance state f
 don't save the state of any operation and use it later for something.
 
 
-
-## Teamwork
-
-#### Development steps
-
-* create a branch for a task with the name of the task   
-  example: **task1**
-* code the task on this branch
-* build the project
-* deploy the project
-* if there is no problem :   
-on branch **task1**:
-```
-git status
-git add .
-git commit -m "message" // exemple : "improved readme"
-git push
-```
-* Create a merge request in GitLab.
-* Verify the change comparing to master.
-* If all is correct and there is no conflict : **Merge**
-
-* Then on branch master :
-```
-git checkout master
-git pull --rebase
-```
-If there is conflict in the merge request :
- * resolve carefully the conflict in GitLab, or :
- * On branch **task1**:
-```
-git checkout task1
-git rebase master
-```
-resolve the conflicts with Atom or GitHub or something like that.
