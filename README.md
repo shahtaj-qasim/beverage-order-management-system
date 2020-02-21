@@ -7,8 +7,7 @@
     - [Build project](#build-project)
     - [Schema](#schema-)
 - [Description](#description)
-- [Teamwork](#teamwork)
-    - [Development steps](#development-steps)
+
 
 
 ## Project Overview
