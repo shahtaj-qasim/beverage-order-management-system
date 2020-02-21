@@ -1,4 +1,3 @@
-# Distributed Systems Architecture And Middleware :  Assignment 1
 
 # Projet BeverageStore
 
