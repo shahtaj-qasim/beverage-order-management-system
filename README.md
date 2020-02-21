@@ -1,5 +1,5 @@
 
-# Project BeverageStore
+# Projet BeverageStore
 
 **Table of Contents**  
 - [Installation](#installation)
