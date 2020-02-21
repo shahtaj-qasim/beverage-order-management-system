@@ -62,7 +62,7 @@ Run target `gradlew deploy`
 
 ### Schema :
 
-![schema](Captureerd.PNG)
+![schema](schemaERD.PNG)
 
 
 
